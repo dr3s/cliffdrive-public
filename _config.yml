@@ -58,6 +58,18 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # post_asides:
 # page_asides:
 
+navigation_elements:
+- name: Home
+  link: /index.html
+- name: Events
+  link: /events.html
+- name: Membership
+  link: /membership.html
+- name: Blog
+  link: /blog/archives/
+- name: Contact
+  link: /contact.html
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
