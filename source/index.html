@@ -19,7 +19,7 @@ footer: true
     <div class="container">
       {% include custom/widgets.html %}
       <div class="row">
-		<div class="span6">
+		<div class="span4">
 		<h2>The place.</h2>
 <p>At Cliff Drive, you can find nearly five miles of paved road that winds around beautiful 
 rock and forested landscape. Every weekend, the Drive is open only to bikes and pedestrians 
@@ -35,34 +35,32 @@ out about all the groups that join up here at Cliff Drive for their
 sports, athletic events, and recreational activities, by clicking on
 Events</p>
 		</div>
+		<div class="span2">
+    {% include custom/asides/found_on.html %}
+  </div>
 		</div>
       
     </div>
   </section>
   <div class="container">
     <div class="row" id="post-container">
-    {% assign index = true %}
-    {% for post in paginator.posts %}
-    {% assign content = post.content %}
       <article class="span4">
-        {% include article.html %}
+        {% include custom/asides/about.html %}
       </article>
-    {% endfor %}
+      <article class="span4">
+        {% include custom/asides/about.html %}
+      </article>
+      <article class="span4">
+        {% include custom/asides/about.html %}
+      </article>
+      <article class="span4">
+        {% include custom/asides/about.html %}
+      </article>
+      <article class="span4">
+        {% include custom/asides/instagram.html %}
+      </article>
     </div>
-      <div class="row">
-        <ul class="pager">
-          {% if paginator.next_page %}
-            <li class="previous">
-              <a href="{{paginator.next_page}}">&larr; Older</a>
-            </li>
-          {% endif %}
-          {% if paginator.previous_page %}
-            <li class="next">
-              <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
+     
   </div>
 </div>
 
