@@ -17,7 +17,7 @@ git add -f .
 
 # Push them to Heroku, then repent of the commit
 
-git ci . -m 'Temporary Heroku-only deployment commit'
+git commit -m 'Temporary Heroku-only deployment commit'
 git push prod master --force
 git reset --soft HEAD~1
 
