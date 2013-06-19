@@ -23,4 +23,4 @@ git reset --soft HEAD~1
 
 # Un-stage the generated files to finish
 
-git reset HEAD -f .
+git reset --hard
