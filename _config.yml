@@ -60,7 +60,7 @@ home_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.htm
 
 navigation_elements:
 - name: Home
-  link: /index.html
+  link: /
 - name: Events
   link: /events.html
 - name: Membership

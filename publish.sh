@@ -22,5 +22,5 @@ git push prod master --force
 git reset --soft HEAD~1
 
 # Un-stage the generated files to finish
-
-git reset --hard
+git rm -frq public
+#  git clean -fd
