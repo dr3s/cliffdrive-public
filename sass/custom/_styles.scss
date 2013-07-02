@@ -27,3 +27,16 @@ article.archive-article-format { box-shadow: none; padding: 0; }
 
 // Add a little horizontal space in dt elements
 .dl-horizontal dt { width: 135px; }
+
+// fancy aside articles
+article.aside {
+  background-size: cover; 
+  background-color: white;
+  
+  }
+  
+.article-content {
+  background-color: rgba(255,255,255,0.7);
+  padding: 0 20px 0 20px;
+	margin: 200px 0 20px 0;
+  }
