@@ -1,4 +1,14 @@
 $(function(){
+
+/**
+	$("article.aside").hover(function() {
+		$(this).prev("article.aside").removeClass("span6").addClass("span1");
+		$(this).removeClass("span1").removeClass("span6").addClass("span11").toggleClass("aside-expanded");
+	}, function() {
+		$(this).removeClass("span11").addClass("span6").toggleClass("aside-expanded");
+		$(this).prev("article.aside").removeClass("span1").addClass("span6");
+	});
+**/
   $('[rel="tooltip"]').tooltip();
 
   if ( window.location.pathname == '/' ) {
