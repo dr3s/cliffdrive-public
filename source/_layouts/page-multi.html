@@ -1,0 +1,39 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<nav role="navigation">{% include navigation.html %}</nav>
+<div class="wrapper_single">
+
+		
+  <div class="container">
+  {% if page.title %}
+			<div class="row-fluid">
+	
+				<div class="span12">
+	  				<h1 style="color:white">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
+	  				</h1>
+	 
+				</div>
+			</div>
+        {% endif %}
+        
+        {{ content }}
+        
+         {% unless page.footer == false %}
+          <footer>
+            {% if page.date or page.author %}<p class="meta">
+              {% if page.author %}{% include post/author.html %}{% endif %}
+              {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+              {% if page.categories %}{% include post/categories.html %}{% endif %}
+            </p>{% endif %}
+          </footer>
+        {% endunless %}
+    {% if site.disqus_short_name and page.comments == true %}
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+      </section>
+    {% endif %}
+  </div>
+</div>
+{% include footer.html %}
+{% include after_footer.html %}

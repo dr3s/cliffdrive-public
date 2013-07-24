@@ -27,7 +27,7 @@ looking for a unique path that’s conveniently located at the North end of Kans
 but feels like a whole other world.</p>
 		</div>
 		<div class="span5">
-		<h2>The Site.</h2>
+		<h2>The Org.</h2>
 <p>CliffDriveKC.org is your resource for all events and groups associated
 with this unique and thrilling Scenic Byway. Check out ways that Cliff
 Drive can be your weekend recreation spot any week of the year, and find
@@ -43,25 +43,39 @@ Events</p>
   <div class="container">
     <div class="row" id="post-container">
       <article class="span6 aside" style="background-image: url('images/cliff/entrance-3.jpg'); ">
-        {% include custom/asides/driving.html %}
+      <div class="article-content">
+        {% markdown content/activities/driving.md %} 
+        </div>
       </article>
       <article class="span6 aside" style="background-image: url('images/cliff/biking.jpg'); ">
-        {% include custom/asides/cycling.html %}
+          <div class="article-content">
+        {% markdown content/activities/cycling.md %}  
+        </div>
       </article>
       <article class="span6 aside" style="background-image: url('images/cliff/hiking.jpg'); ">
-        {% include custom/asides/hiking.html %}
-      </article>
-      <article class="span6 aside" style="background-image: url('images/cliff/entrance-2.jpg'); ">
-        {% include custom/asides/dogs.html %}
-      </article>
-      <article class="span6 aside" style="background-image: url('images/cliff/fishing-2.jpg'); ">
-        {% include custom/asides/fishing.html %}
-      </article>
-      <article class="span6 aside" style="background-image: url('images/cliff/climbing-3.jpg'); ">
-        {% include custom/asides/climbing.html %}
+         <div class="article-content">
+        {% markdown content/activities/hiking.md %} 
+        </div>
       </article>
       <article class="span6 aside" style="background-image: url('images/cliff/frisbee.jpg'); ">
-        {% include custom/asides/frisbee.html %}
+         <div class="article-content">
+        {% markdown content/activities/frisbee.md %} 
+        </div>
+      </article>
+      <article class="span6 aside" style="background-image: url('images/cliff/fishing-2.jpg'); ">
+         <div class="article-content">
+        {% markdown content/activities/fishing.md %} 
+        </div>
+      </article>
+      <article class="span6 aside" style="background-image: url('images/cliff/climbing-3.jpg'); ">
+         <div class="article-content">
+        {% markdown content/activities/climbing.md %} 
+        </div>
+      </article>
+      <article class="span6 aside" style="background-image: url('images/cliff/entrance-2.jpg'); ">
+         <div class="article-content">
+        {% markdown content/activities/dogs.md %} 
+        </div>
       </article>
     </div>
      
